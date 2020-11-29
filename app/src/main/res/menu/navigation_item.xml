@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/templates"
+        android:icon="@drawable/ic_cv"
+        android:title="Templates"/>
+    <item android:id="@+id/newCv"
+        android:icon="@drawable/ic_cv"
+        android:title="Create New CV"/>
+    <item
+        android:id="@+id/moreApps_id"
+        android:icon="@drawable/ic_apps"
+        android:title="More Apps"/>
+
+    <item
+        android:id="@+id/rateUs_id"
+        android:icon="@drawable/ic_rate"
+        android:title="Rate Us"/>
+    <item android:id="@+id/share_id"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share"/>
+</menu>

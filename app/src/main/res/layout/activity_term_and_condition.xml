@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackColor"
+    tools:context=".Activity.TermAndConditionActivity">
+    <TextView
+        android:id="@+id/app_name_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/app_name"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/_25ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/timesnewromanbolditalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/termAndCondition"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/whiteColor"
+        android:text="Application Provided to make a cv with different templates"
+        app:layout_constraintTop_toBottomOf="@id/app_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:id="@+id/scrollView"
+        app:layout_constraintTop_toBottomOf="@id/termAndCondition"
+        app:layout_constraintStart_toStartOf="@id/termAndCondition"
+        app:layout_constraintEnd_toEndOf="@id/termAndCondition"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="0dp"
+        android:background="@drawable/term_and_condition_bg"
+        android:layout_height="@dimen/_300sdp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/termAndCondition_title"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/timesnewromanbold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Term and Privacy Policy"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/whiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="@dimen/_2sdp"
+                android:id="@+id/instruction_id"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/whiteColor"
+                app:layout_constraintTop_toBottomOf="@id/termAndCondition_title"
+                android:text="Please read the term of service carefully as the contain important information regarding your legal rights remedies and and obligation."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:id="@+id/external_storage_id"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:text="1. Internal Storage"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/timesnewromanbold"
+                android:textColor="@color/whiteColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/instruction_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/whiteColor"
+                app:layout_constraintStart_toStartOf="@id/external_storage_id"
+                app:layout_constraintTop_toBottomOf="@id/external_storage_id"
+                android:textSize="@dimen/_10ssp"
+                android:text="This service is used the internal storage of your phone for cv profile picture and also used for the save the cv as pdf formats and also delete the cv from internal storage and also service rename the pdf file from application."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <CheckBox
+        android:textColor="@color/whiteColor"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        android:id="@+id/checkbox"
+        android:buttonTint="@color/whiteColor"
+        app:layout_constraintStart_toStartOf="@id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Accept terms and Privacy Policy"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintTop_toTopOf="@id/checkbox"
+        app:layout_constraintBottom_toBottomOf="@id/checkbox"
+        app:layout_constraintEnd_toEndOf="@id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/getStartedId"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="@id/scrollView"
+        app:layout_constraintEnd_toEndOf="@id/scrollView"
+        app:layout_constraintTop_toBottomOf="@id/checkbox"
+        android:text="Get Started"
+        android:background="@drawable/button_bg"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/whiteColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

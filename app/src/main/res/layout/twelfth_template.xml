@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/outerLay"
+    android:background="@color/whiteColor"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/userNameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/username"
+        android:fontFamily="@font/timesnewromanbolditalic"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/professionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_profession"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/timesnewromanbolditalic"
+        app:layout_constraintStart_toStartOf="@id/userNameId"
+        app:layout_constraintEnd_toEndOf="@id/userNameId"
+        app:layout_constraintTop_toBottomOf="@id/userNameId" />
+
+    <View
+        android:id="@+id/lineId1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="#4e4e4e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/professionId" />
+
+    <ImageView
+        android:id="@+id/phoneNoImageId"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/mobile_number_icon"
+        app:layout_constraintStart_toStartOf="@id/lineId1"
+        app:layout_constraintTop_toBottomOf="@id/lineId1"
+        app:tint="@color/blackColor" />
+
+    <TextView
+        android:id="@+id/mobileNoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="@string/mobile_nos"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_5ssp"
+        app:layout_constraintBottom_toBottomOf="@id/phoneNoImageId"
+        app:layout_constraintStart_toEndOf="@id/phoneNoImageId"
+        app:layout_constraintTop_toTopOf="@id/phoneNoImageId" />
+
+
+    <ImageView
+        android:id="@+id/emailImageId"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:src="@drawable/email_icon"
+        app:layout_constraintStart_toStartOf="@id/phoneNoImageId"
+        app:layout_constraintTop_toBottomOf="@id/phoneNoImageId"
+        app:tint="@color/blackColor" />
+
+    <TextView
+        android:id="@+id/emailID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="@string/email_gmail_com"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_5ssp"
+        app:layout_constraintBottom_toBottomOf="@id/emailImageId"
+        app:layout_constraintStart_toEndOf="@id/emailImageId"
+        app:layout_constraintTop_toTopOf="@id/emailImageId" />
+
+    <ImageView
+        android:id="@+id/addressImageId"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:src="@drawable/address_icon"
+        app:layout_constraintStart_toStartOf="@id/emailImageId"
+        app:layout_constraintTop_toBottomOf="@id/emailImageId"
+        app:tint="@color/blackColor" />
+
+    <TextView
+        android:id="@+id/addressId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="@string/addresses"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_5ssp"
+        app:layout_constraintBottom_toBottomOf="@id/addressImageId"
+        app:layout_constraintStart_toEndOf="@id/addressImageId"
+        app:layout_constraintTop_toTopOf="@id/addressImageId" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/background_layout"
+        android:src="@drawable/abc"
+        app:layout_constraintEnd_toEndOf="@id/lineId1"
+        app:layout_constraintTop_toBottomOf="@id/lineId1"
+        app:layout_constraintTop_toTopOf="@id/phoneNoImageId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:text="@string/profile"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/timesnewromanbold"
+        android:id="@+id/profileID"
+        app:layout_constraintBottom_toTopOf="@id/lineId2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/lineId2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="#4e4e4e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addressImageId" />
+
+    <TextView
+        android:id="@+id/aboutYourSelf"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="@id/lineId1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/about_yourself"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId2"
+        app:layout_constraintTop_toBottomOf="@id/lineId2" />
+
+    <TextView
+        android:id="@+id/experiencedId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:text="@string/experienced"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/timesnewromanbold"
+        app:layout_constraintTop_toBottomOf="@id/aboutYourSelf"
+        app:layout_constraintBottom_toTopOf="@id/lineId3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/lineId3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="#4e4e4e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aboutYourSelf" />
+
+    <TextView
+        android:id="@+id/experiencedTitleId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/experienced_title"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId3"
+        app:layout_constraintTop_toBottomOf="@id/lineId3" />
+
+    <TextView
+        android:id="@+id/experiencedDId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/experienced_duration"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/experiencedTitleId"
+        app:layout_constraintTop_toBottomOf="@id/lineId3" />
+
+    <TextView
+        android:id="@+id/expDescriptionId"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="@id/lineId3"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="@string/description"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId3"
+        app:layout_constraintTop_toBottomOf="@id/experiencedTitleId" />
+
+    <TextView
+        android:id="@+id/educationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:text="@string/education"
+        android:fontFamily="@font/timesnewromanbold"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/blackColor"
+        app:layout_constraintBottom_toTopOf="@id/lineId4"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/lineId4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="#4e4e4e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/expDescriptionId" />
+    <TextView
+        android:id="@+id/institutionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/institute"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId4"
+        app:layout_constraintTop_toBottomOf="@id/lineId4" />
+
+    <TextView
+        android:id="@+id/educationFromId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:text="@string/from"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintTop_toTopOf="@id/institutionId"
+        app:layout_constraintBottom_toBottomOf="@id/institutionId"
+        app:layout_constraintStart_toEndOf="@id/institutionId"
+        app:layout_constraintTop_toBottomOf="@id/lineId4" />
+
+    <TextView
+        android:id="@+id/educationToId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintBottom_toBottomOf="@id/educationFromId"
+        app:layout_constraintTop_toTopOf="@id/educationFromId"
+        app:layout_constraintStart_toEndOf="@id/educationFromId"
+        app:layout_constraintTop_toBottomOf="@id/lineId4" />
+    <TextView
+        android:id="@+id/marks1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:text="440/550"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/educationToId"
+        app:layout_constraintBottom_toBottomOf="@id/educationToId"
+        app:layout_constraintTop_toTopOf="@id/educationToId"/>
+    <TextView
+        android:id="@+id/institutionId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/institute"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId4"
+        app:layout_constraintTop_toBottomOf="@id/institutionId" />
+
+    <TextView
+        android:id="@+id/educationFromId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:text="@string/from"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintTop_toTopOf="@id/institutionId1"
+        app:layout_constraintBottom_toBottomOf="@id/institutionId1"
+        app:layout_constraintStart_toEndOf="@id/institutionId1"
+        app:layout_constraintTop_toBottomOf="@id/educationFromId" />
+
+    <TextView
+        android:id="@+id/educationToId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toTopOf="@id/educationFromId1"
+        app:layout_constraintBottom_toBottomOf="@id/educationFromId1"
+        app:layout_constraintStart_toEndOf="@id/educationFromId1"
+        app:layout_constraintTop_toBottomOf="@id/educationToId" />
+    <TextView
+        android:id="@+id/marks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:text="440/550"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/educationToId1"
+        app:layout_constraintBottom_toBottomOf="@id/educationToId1"
+        app:layout_constraintTop_toTopOf="@id/educationToId1"/>
+    <TextView
+        android:id="@+id/institutionId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/institute"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId4"
+        app:layout_constraintTop_toBottomOf="@id/institutionId1" />
+
+    <TextView
+        android:id="@+id/educationFromId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:text="@string/from"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintTop_toTopOf="@id/institutionId2"
+        app:layout_constraintBottom_toBottomOf="@id/institutionId2"
+        app:layout_constraintStart_toEndOf="@id/institutionId2"
+        app:layout_constraintTop_toBottomOf="@id/educationFromId1" />
+
+    <TextView
+        android:id="@+id/educationToId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toTopOf="@id/educationFromId2"
+        app:layout_constraintBottom_toBottomOf="@id/educationFromId2"
+        app:layout_constraintStart_toEndOf="@id/educationFromId2"
+        app:layout_constraintTop_toBottomOf="@id/educationToId1" />
+    <TextView
+        android:id="@+id/marks3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:text="3.5/5"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/educationToId2"
+        app:layout_constraintBottom_toBottomOf="@id/educationToId2"
+        app:layout_constraintTop_toTopOf="@id/educationToId2"/>
+
+    <TextView
+        android:id="@+id/skillID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:text="@string/skills"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/timesnewromanbold"
+        app:layout_constraintBottom_toTopOf="@id/lineId5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/lineId5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="#4e4e4e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineId4" />
+
+    <TextView
+        android:id="@+id/firstSkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/firstSkills"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId5"
+        app:layout_constraintTop_toBottomOf="@id/lineId5" />
+
+    <TextView
+        android:id="@+id/secondSkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/skills"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/firstSkill"
+        app:layout_constraintTop_toBottomOf="@id/lineId5" />
+
+    <TextView
+        android:id="@+id/thirdSkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/thirdSkill"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/secondSkill"
+        app:layout_constraintTop_toBottomOf="@id/lineId5" />
+
+    <TextView
+        android:id="@+id/fourthSkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/fourthSkill"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/thirdSkill"
+        app:layout_constraintTop_toBottomOf="@id/lineId5" />
+
+    <TextView
+        android:id="@+id/fifthSkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/fifthSkill"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/fourthSkill"
+        app:layout_constraintTop_toBottomOf="@id/lineId5" />
+
+    <TextView
+        android:id="@+id/projectId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:text="@string/projects"
+        android:textColor="@color/blackColor"
+
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/timesnewromanbold"
+        app:layout_constraintBottom_toTopOf="@id/lineId6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/lineId6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="#4e4e4e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineId5" />
+
+    <TextView
+        android:id="@+id/projectTitleId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/project_name"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId6"
+        app:layout_constraintTop_toBottomOf="@id/lineId6" />
+
+    <TextView
+        android:id="@+id/projectDescriptionId"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="@id/lineId6"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/project_description"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId6"
+        app:layout_constraintTop_toBottomOf="@id/projectTitleId" />
+
+    <TextView
+        android:id="@+id/projectToolsId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/project_tools"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId6"
+        app:layout_constraintTop_toBottomOf="@id/projectDescriptionId" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:text="@string/achievement"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_10ssp"
+        android:id="@+id/achievementId"
+        android:fontFamily="@font/timesnewromanbold"
+        app:layout_constraintBottom_toTopOf="@id/lineId7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/lineId7"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="#4e4e4e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/projectToolsId" />
+
+    <TextView
+        android:id="@+id/firstAchievement"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="@id/lineId7"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/firstAchievement"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId7"
+        app:layout_constraintTop_toBottomOf="@id/lineId7" />
+
+    <TextView
+        android:id="@+id/secondAchievement"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="@id/lineId7"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="@string/secondAchievement"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId7"
+        app:layout_constraintTop_toBottomOf="@id/firstAchievement" />
+
+
+    <TextView
+        android:id="@+id/languageID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:text="@string/languages"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/timesnewromanbold"
+        app:layout_constraintBottom_toTopOf="@id/lineId8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/lineId8"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="#4e4e4e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineId7" />
+
+    <TextView
+        android:id="@+id/firstLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/firstLanguage"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@id/lineId8"
+        app:layout_constraintTop_toBottomOf="@id/lineId8" />
+
+    <TextView
+        android:id="@+id/secondLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/secondLanguage"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/firstLanguage"
+        app:layout_constraintTop_toBottomOf="@id/lineId8" />
+
+    <TextView
+        android:id="@+id/thirdLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/thirdLanguage"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/secondLanguage"
+        app:layout_constraintTop_toBottomOf="@id/lineId8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackColor"
+    tools:context=".Activity.SplashScreenActivity">
+    <TextView
+        android:id="@+id/cv_name_id"
+        app:layout_constraintBottom_toTopOf="@+id/imageview"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/app_name"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/_20ssp"
+        android:fontFamily="@font/timesnewromanbolditalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="@dimen/_7sdp"
+        app:layout_constraintTop_toBottomOf="@id/cv_name_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageview"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/whiteColor"
+        android:text="@string/splahsh_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_150sdp"
+        app:srcCompat="@drawable/cvsplash"
+        android:layout_marginBottom="@dimen/_100sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:indeterminateTint="@color/whiteColor"
+        android:indeterminate="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

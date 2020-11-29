@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/templates_id"
+        android:icon="@drawable/ic_resume"
+        android:title="Templates"/>
+    <item android:id="@+id/newCv_id"
+        android:icon="@drawable/ic_resume"
+        android:title="Create New CV"/>
+    <item android:id="@+id/shareId"
+        android:icon="@drawable/share_ic"
+        android:title="@string/share"/>
+</menu>
